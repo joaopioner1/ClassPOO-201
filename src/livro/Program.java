@@ -8,15 +8,19 @@ public class Program {
 		//Author: Joao Vitor Souza Pioner | Date: 24/06/21
 		Scanner sc = new Scanner(System.in);
 		
-		Livro livro = new Livro();//Instanciando um objeto
-	
 		System.out.print("Insira o titulo do livro: ");
 		String titulo = sc.nextLine();
-		System.out.print("Insira o titulo do livro: ");
+		System.out.print("Insira o numero de paginas totais do livro: ");
 		int numPaginasTotais = sc.nextInt();
 		System.out.print("Insira o titulo do livro: ");
 		int numPaginasLidas = sc.nextInt();
 		
+		Livro livro = new Livro(titulo, numPaginasTotais, numPaginasLidas);//Instanciando um objeto
+		
+		livro.ler(60);
+		System.out.println(livro.getNumeroPgLidas());
+		livro.recomeca();
+		System.out.println(livro.getNumeroPgLidas());
 		sc.close();
 	}
 
