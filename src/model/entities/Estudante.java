@@ -22,7 +22,32 @@ public class Estudante {
 		setIdade(idade);
 		setNota(nota);
 	}
-
+	
+	//METODINHOS
+	public Integer fazAniversario() {
+		return getIdade() + 1;
+	}
+	
+	public void insereNota(Double nota) {
+		if (this.nota[0] == null) {
+			this.nota[0] = nota;
+		} 
+		else if (this.nota[1] == null) {
+			this.nota[1] = nota;
+		} 
+		else {
+			this.nota[2] = nota;
+		}
+	}
+	
+	public Double calculaMedia() {
+		double amount = 0;
+		for (int i = 0; i < nota.length; i++) {
+			amount = nota[i];
+		}
+		return amount / nota.length;
+	}
+	
 	//GETTERS AND SETTERS
 	public String getNome() {
 		return nome;
