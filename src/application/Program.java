@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Program {
 
 	public static void main(String[] args) {
-		//Name: Joao Vitor Souza Pioner | Date: 16/08/2021
+		//Author: Joao Vitor Souza Pioner | Date: 16/08/2021
 		Scanner scan = new Scanner(System.in);
 		
 		
