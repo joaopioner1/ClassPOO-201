@@ -7,12 +7,27 @@ public class Program {
 	public static void main(String[] args) {
 		//Author: Joao Vitor Souza Pioner | Date: 17/08/2021
 		
-		Livro l1 = new Livro();
-		System.out.println(l1);
-		l1.setNumPagLidas(20);
-		l1.setPaginas(15);
-		System.out.println(l1);
+		try {
+			Livro l1 = new Livro();
+			System.out.println(l1);
+			l1.setPaginas(15);
+			l1.setNumPagLidas(15);
+			System.out.println(l1);
+			
+			l1.ler(-1);
+			System.out.println(l1);
+			
+			l1.recomeca();
+			System.out.println(l1);
+			
+			l1.ler(40);
+			System.out.println(l1);
 
+		}
+		catch (NullPointerException e) {
+			System.out.println("O numero de paginas lidas deve ser menor/igual ao numero de paginas.");
+			e.printStackTrace();
+		}
 	}
 
 }
