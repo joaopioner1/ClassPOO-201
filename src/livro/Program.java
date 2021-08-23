@@ -12,7 +12,7 @@ public class Program {
 		String titulo = sc.nextLine();
 		System.out.print("Insira o numero de paginas totais do livro: ");
 		int numPaginasTotais = sc.nextInt();
-		System.out.print("Insira o titulo do livro: ");
+		System.out.print("Insira o paginas lidas do livro: ");
 		int numPaginasLidas = sc.nextInt();
 		
 		Livro livro = new Livro(titulo, numPaginasTotais, numPaginasLidas);//Instanciando um objeto
@@ -22,6 +22,10 @@ public class Program {
 		livro.recomeca();
 		System.out.println(livro.getNumeroPgLidas());
 		sc.close();
+		
+		Livro l1 = new Livro();
+		System.out.println(	l1.getTitulo());
+		
 	}
 
 }
